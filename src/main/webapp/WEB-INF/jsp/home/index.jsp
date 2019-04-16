@@ -1,79 +1,62 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<!doctype html>
-<html lang="ko">
-<head>
-    <meta charset="utf-8">
-    <title>CSS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--  반응형 웹 : https://www.codingfactory.net/10534 -->
-    <!-- Spring boot JSP 설정 http://millky.com/@origoni/post/1144 -->
-    <style>
-        #jb-container {
-            width: 940px;
-            margin: 10px auto;
-            padding: 20px;
-            border: 1px solid #bcbcbc;
-        }
-        #jb-header {
-            padding: 20px;
-            margin-bottom: 20px;
-            border: 1px solid #bcbcbc;
-        }
-        #jb-content {
-            width: 580px;
-            padding: 20px;
-            margin-bottom: 20px;
-            float: left;
-            border: 1px solid #bcbcbc;
-        }
-        #jb-sidebar {
-            width: 260px;
-            padding: 20px;
-            margin-bottom: 20px;
-            float: right;
-            border: 1px solid #bcbcbc;
-        }
-        #jb-footer {
-            clear: both;
-            padding: 20px;
-            border: 1px solid #bcbcbc;
-        }
-        @media ( max-width: 480px ) {
-            #jb-container {
-                width: auto;
-            }
-            #jb-content {
-                float: none;
-                width: auto;
-            }
-            #jb-sidebar {
-                float: none;
-                width: auto;
-            }
-        }
-    </style>
-</head>
-<body>
-<div id="jb-container">
-    <div id="jb-header">
-        <h1>Responsive Layout</h1>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <form class="navbar-form navbar-right">
+                <div class="form-group">
+                    <input type="text" placeholder="Email" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Password" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-success">Sign in</button>
+            </form>
+        </div><!--/.navbar-collapse -->
     </div>
-    <div id="jb-content">
-        <h2>Content</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec mollis nulla. Phasellus lacinia tempus mauris eu laoreet. Proin gravida velit dictum dui consequat malesuada. Aenean et nibh eu purus scelerisque aliquet nec non justo. Aliquam vitae aliquet ipsum. Etiam condimentum varius purus ut ultricies. Mauris id odio pretium, sollicitudin sapien eget, adipiscing risus.</p>
-    </div>
-    <div id="jb-sidebar">
-        <h2>Sidebar</h2>
-        <ul>
-            <li>Lorem</li>
-            <li>Ipsum</li>
-            <li>Dolor</li>
-        </ul>
-    </div>
-    <div id="jb-footer">
-        <p>Copyright</p>
+</nav>
+
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+    <div class="container">
+        <h1>Hello, world!</h1>
+        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
     </div>
 </div>
-</body>
-</html>
+
+<div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Heading</h2>
+            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Heading</h2>
+            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Heading</h2>
+            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+    </div>
+
+    <hr>
+
+    <footer>
+        <p>&copy; Company 2014</p>
+    </footer>
+</div> <!-- /container -->
