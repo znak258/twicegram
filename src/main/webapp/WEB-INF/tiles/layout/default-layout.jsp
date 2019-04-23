@@ -12,15 +12,14 @@
     <head>
         <tiles:insertAttribute name="include" />
         <tiles:insertAttribute name="header" />
+        <tiles:insertAttribute name="bootstrapjs" />
     </head>
     <body>
+    <div class="container">
         <tiles:insertAttribute name="nav" />
         <tiles:insertAttribute name="jumbotron" />
-        <div class="container">
-            <tiles:insertAttribute name="content" />
-        <hr>
-        <tiles:insertAttribute name="footer" />
-        </div>
-        <tiles:insertAttribute name="bootstrapjs" />
+        <tiles:insertAttribute name="content" />
+    </div>
     </body>
+    <tiles:insertAttribute name="footer" />
 </html>
