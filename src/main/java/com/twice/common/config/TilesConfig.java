@@ -24,4 +24,5 @@ public class TilesConfig {
         resolver.setOrder(1);
         return resolver;
     }
+
 }
